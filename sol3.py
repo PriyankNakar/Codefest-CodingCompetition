@@ -8,7 +8,6 @@ def sol():
     file1=open('paytm_stock_input.txt','r')
     lines=file1.readlines()
     lines.pop(0)
-    print(lines)
     for inp in lines:
         list_=ast.literal_eval(inp)
         minpos,maxpos=minmax(list_)
@@ -18,7 +17,6 @@ def sol():
             counter=0
             while minpos>maxpos and counter<len(list_):
                 nvlist=list(list_)
-                nvlist[minpos]=NULL
                 nvlist[minpos]=NULL
                 minpos,maxpos=minmax(nvlist)
                 counter+=1
